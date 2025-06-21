@@ -56,5 +56,5 @@ Maximize total profit by deciding the optimal number of tables and chairs to pro
 
 Clone the repository:
    ```bash
-   git clone https://github.com/your-username/business-optimization-with-pulp.git
+   git clone https://github.com/Riteshtech9/business-optimization-with-pulp.git
    cd business-optimization-with-pulp
