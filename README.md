@@ -1,60 +1,59 @@
-# 📈 Business Optimization with PuLP
+# 🧃 Juice Product Mix Optimization using Linear Programming
 
-This project solves a **real-world product mix optimization problem** using **Linear Programming (LP)** with the **PuLP** library in Python. It is designed to demonstrate how operations research techniques can be applied to maximize business profits given resource constraints.
+This project demonstrates how to solve a **real-world product mix optimization problem** using Python and the `PuLP` library for Linear Programming (LP).
 
----
+A fictional juice factory produces:
+- 🍎 Apple Juice
+- 🍊 Orange Juice
+- 🍇 Mixed Fruit Juice
 
-## 🧮 Problem Statement
-
-A furniture company manufactures **Tables** and **Chairs**.  
-Each product generates profit and consumes two key resources: **wood** and **labor**.
-
-- **Profit per Table**: ₹2,500  
-- **Profit per Chair**: ₹1,500  
-- **Resources per Table**: 10 units of wood, 7 labor hours  
-- **Resources per Chair**: 5 units of wood, 4 labor hours  
-- **Total Available Resources**:  
-  - Wood: 400 units  
-  - Labor: 280 hours
-
-### 🎯 Objective:
-Maximize total profit by deciding the optimal number of tables and chairs to produce.
+The goal is to **maximize profit** given limited resources like machine hours and labor time.
 
 ---
 
-## ⚙️ Tools and Techniques
+## 📌 Problem Description
 
-- Linear Programming (Maximization)
-- [PuLP](https://pypi.org/project/PuLP/) Python library
-- Jupyter Notebook
-- Basic operations research modeling
+| Product             | Profit/unit (₹) | Machine Time (hrs) | Labor Time (hrs) | Max Units |
+|---------------------|------------------|----------------------|-------------------|-----------|
+| Apple Juice         | 25               | 3                    | 2                 | 60        |
+| Orange Juice        | 30               | 2                    | 3                 | 60        |
+| Mixed Fruit Juice   | 40               | 4                    | 4                 | 60        |
+
+### 🔧 Constraints:
+- Max available machine time: **240 hours**
+- Max available labor time: **220 hours**
 
 ---
 
-## 📂 Files Included
+## ✅ Features
 
-- `product_mix_optimization_pulp.ipynb`:  
-  Complete Jupyter Notebook with problem setup, LP model, solution, and insights.
+- ✔️ Linear Programming formulation using `PuLP`
+- 📊 Visualization of optimal product mix using `matplotlib`
+- 📥 Optional data input from Excel (simulated in this version)
+- 🔁 Basic sensitivity analysis to test how changes in resources affect output
+
+---
+
+## 📁 Files
+
+| File Name                               | Description                              |
+|----------------------------------------|------------------------------------------|
+| `Juice_Product_Mix_Optimization.ipynb` | Main Jupyter notebook                    |
+| `README.md`                             | This documentation                       |
+| *(Optional)* `juice_data.xlsx`         | Excel file with input data (not included)|
+
+---
+
+## 📦 Requirements
+
+- Python 3.7+
+- PuLP
+- Pandas
+- Matplotlib
+
+### 🔧 Install via pip:
+
+```bash
+pip install pulp pandas matplotlib
+
   
-- `README.md`:  
-  Description and documentation of the project.
-
-- `requirements.txt` *(optional)*:  
-  Contains required packages (e.g., `pulp`)
-
----
-
-## 📊 Key Results
-
-- Optimal product mix (number of tables and chairs)
-- Maximum achievable profit under constraints
-- Managerial insights and suggestions for resource planning
-
----
-
-## 🛠️ Installation
-
-Clone the repository:
-   ```bash
-   git clone https://github.com/Riteshtech9/business-optimization-with-pulp.git
-   cd business-optimization-with-pulp
